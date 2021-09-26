@@ -42,7 +42,7 @@ jobs:
 
       - name: build with pyinstaller
         run: |
-          pyinstaller --onefile --noconsole src/main.py
+          poetry run pyinstaller --onefile src/main.py
       
       # Create new release
       - name: Create Release
