@@ -37,7 +37,7 @@ jobs:
 
       - name: build with pyinstaller
         run: |
-          poetry run pyinstaller --onefile src/main.py
+          poetry run pyinstaller --onefile src/main.py -n discord-archiver.py
 
       # Create new release
       - name: Create Release
